@@ -31,6 +31,7 @@ body{
 
     .header{
         padding: 24px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
 
     .top{
@@ -38,6 +39,7 @@ body{
         align-items: center;
         gap: 12px;
         grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 12px;
     }
         .search{
             justify-self: center;
@@ -53,11 +55,11 @@ body{
 
         .bell{
             grid-column-start: 4;
-            justify-self: center;
+            justify-self: end;
         }
 
         .profilepic{
-            width: 64px;
+            width: 48px;
             justify-self: center;
         }
 
@@ -65,9 +67,42 @@ body{
             font-weight: bold;
             justify-self: center;
         }
-
-
-
+    
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+        .bigimage{
+            width: 64px;
+            grid-row-end: span 2;
+            justify-self: end;
+        }
+        .welcome{
+            grid-row-end: span 2;
+            font-weight: bold;
+            display: grid;
+        }
+            .hello{
+                margin-bottom: 0;
+            }
+            .salute{
+                font-size: 24px;
+                align-self: baseline;
+                margin: 0;
+            }
+        .blue{
+            align-self: center;
+            grid-row-end: span 2;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            background-color: #38bdf8;
+            color: white;
+        }
 .main{
     background-color: #e0f2fe;
 }
