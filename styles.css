@@ -24,6 +24,11 @@ body{
     list-style-type: none;
 }
 
+.ico-white{
+    filter: invert();
+    width: 24px;
+}
+
 .header{
     padding: 24px;
 }
