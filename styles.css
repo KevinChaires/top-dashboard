@@ -11,41 +11,64 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 
-.sidebar{
-    background-color: #38bdf8;
-    grid-row-end: span 2;
-    color: white;
-    padding: 12px;
-    font-size: 24px;
-    font-weight: bold;
-}
+    .sidebar{
+        background-color: #38bdf8;
+        grid-row-end: span 2;
+        color: white;
+        padding: 12px;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-.sidebar ul{
-    list-style-type: none;
-}
+        .sidebar ul{
+            list-style-type: none;
+        }
 
-.ico-white{
-    filter: invert();
-    width: 24px;
-}
+        .ico-white{
+            filter: invert();
+            width: 24px;
+        }
 
-.header{
-    padding: 24px;
-}
+    .header{
+        padding: 24px;
+    }
+
+    .top{
+        display: grid;
+        align-items: center;
+        gap: 12px;
+        grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+    }
+        .search{
+            justify-self: center;
+        }
+
+        .bar{
+            background-color: #e0f2fe;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .bell{
+            grid-column-start: 4;
+            justify-self: center;
+        }
+
+        .profilepic{
+            width: 64px;
+            justify-self: center;
+        }
+
+        .naming{
+            font-weight: bold;
+            justify-self: center;
+        }
+
+
 
 .main{
     background-color: #e0f2fe;
 }
 
-.top{
-    display: grid;
-    grid-template-columns: 1fr auto 2fr 1fr 1fr 1fr;
-}
-
-.bar{
-    width: auto;
-}
-
-.bell{
-    grid-column-start: 4;
-}
