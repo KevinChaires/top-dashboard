@@ -15,13 +15,18 @@ body{
         background-color: #38bdf8;
         grid-row-end: span 2;
         color: white;
-        padding: 12px;
+        padding: 24px;
         font-size: 24px;
         font-weight: bold;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: max-content;
+        align-items: center;
+        gap: 12px;
     }
-
-        .sidebar ul{
-            list-style-type: none;
+        .sidebar-spacer{
+            grid-column-end: span 2;
+            height: 42px;
         }
 
         .ico-white{
@@ -137,7 +142,7 @@ body{
         }
             .mainboard-color{
                 grid-row-end: span 2;
-                background-color: blue;
+                background-color: #075985;
             }
             .mainboard-content{
                 margin-left: 12px;
