@@ -24,6 +24,10 @@ body{
         align-items: center;
         gap: 12px;
     }
+        .sidebar a{
+            color: white;
+            text-decoration: none;
+        }
         .sidebar-spacer{
             grid-column-end: span 2;
             height: 42px;
@@ -111,6 +115,10 @@ body{
             border: none;
             background-color: #38bdf8;
             color: white;
+        }
+
+        .blue:hover{
+            background-color:#0284c7;
         }
 .main{
     background-color: #e0f2fe;
