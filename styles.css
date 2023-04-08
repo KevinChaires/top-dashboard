@@ -7,7 +7,7 @@ body{
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -118,6 +118,7 @@ body{
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: max-content;
         gap: 24px
 
     }
@@ -127,17 +128,16 @@ body{
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             display: grid;
             grid-template-columns: 10px 1fr;
-            grid-template-rows: 3fr 1fr;
+            grid-template-rows: 2fr 1fr;
             overflow: hidden;
         }
             .mainboard-color{
-                grid-row-end: span 3;
+                grid-row-end: span 2;
                 background-color: blue;
             }
             .mainboard-content{
                 margin-left: 12px;
                 margin-right: 48px;
-                grid-row-end: span 2;
             }
             .mainboard-links{
                 display: grid;
@@ -147,9 +147,6 @@ body{
             }
             .mainboard-links img{
                 width: 24px;
-                align-self: center;
-                justify-self: center;
-                margin-bottom: 24px;
             }
 
     .rightbar{
