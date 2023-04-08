@@ -115,8 +115,11 @@ body{
         grid-row-start: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-        background-color: gray;
-        height: 200px
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px
+
     }
         .mainboard{
             background-color: white;
